@@ -1,3 +1,32 @@
 # joke_rating
 
-The dataset contains anonymous ratings(-10 to 10) provided by a total of 41,000 users. Train file contains 1.1 million ratings and in the test file the user needs to predict the ratings provided by the same set of users on a diffrent set of jokes. The complete text for all 139 jokes is also provided in a separate csv. Given the combination of user and joke, the task is to predict the rating given by that user to the joke in the test set
+## Libraries Used:
+
+matplotlib, pandas, numpy, seaborn for data manipulation and visualization.
+LabelEncoder from sklearn.preprocessing for encoding categorical features.
+train_test_split from sklearn.model_selection for splitting the dataset.
+LinearRegression from sklearn.linear_model for building a linear regression model.
+Other libraries: warnings, math for handling warnings and mathematical operations.
+## Data Loading and Merging:
+
+Loading datasets: train.csv, jokes.csv, test.csv.
+Merging joke text into the training and test datasets based on joke_id.
+## Data Exploration:
+
+Checking for missing values in each dataset.
+Visualizing boxplots for user and joke IDs.
+Visualizing bar plots for the distribution of ratings.
+## Data Preprocessing:
+
+Label encoding applied to categorical features.
+## Model Building:
+
+Splitting the dataset into features (X) and target variable (y).
+Training a Linear Regression model on 40% of the data.
+Visualizing coefficients using a barplot.
+## Model Evaluation:
+
+Computing Root Mean Squared Error (RMSE) and printing the result.
+## Submission:
+
+Making predictions on the test set and saving the results to a CSV file for submission.
